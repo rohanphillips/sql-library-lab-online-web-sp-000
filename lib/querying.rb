@@ -27,7 +27,7 @@ def select_name_and_series_subgenres_of_authors
 end
 
 def select_series_title_with_most_human_characters
-  "SELECT title, characters.species, characters.species_count
+  "SELECT title
   FROM series
   JOIN
   (SELECT author_id, species, COUNT(species) AS species_count
