@@ -30,7 +30,7 @@ def select_series_title_with_most_human_characters
   "SELECT title
   FROM series
   JOIN
-  (SELECT authod_id, COUNT(species)
+  (SELECT author_id, COUNT(species)
     FROM characters
     WHERE species = 'human'
     ORDER BY COUNT(species) DESC
