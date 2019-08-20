@@ -42,6 +42,6 @@ def select_character_names_and_number_of_books_they_are_in
   "SELECT books.title
   FROM books
   JOIN series ON series.author_id = authors.id
-  OUTER JOIN characters ON characters.author_id = series.author_id
+  INNER JOIN characters ON characters.author_id = series.author_id
   "
 end
