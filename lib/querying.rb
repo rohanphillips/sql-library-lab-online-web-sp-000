@@ -44,6 +44,6 @@ def select_character_names_and_number_of_books_they_are_in
   JOIN series ON books.series_id = series.id
   JOIN authors ON series.author_id = authors.id
   JOIN characters ON characters.author_id = authors.id
-  GROUP BY characters.name, books.title
+  GROUP BY books.title
   "
 end
