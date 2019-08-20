@@ -33,7 +33,7 @@ def select_series_title_with_most_human_characters
   (SELECT author_id, COUNT(species)
     FROM characters
     WHERE species = 'human'
-    ORDER BY COUNT(species) DESC
+    ORDER BY COUNT(species) ASC
   ) characters ON series.author_id = characters.author_id"
 end
 
